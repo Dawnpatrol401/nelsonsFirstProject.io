@@ -1,0 +1,25 @@
+h1{
+    background-color: darkslategrey;
+    color: whitesmoke;
+    font-family: serif;
+    font-size: 2rem;
+}
+
+fieldset{
+    background-color: lightgrey;
+    margin-bottom: 1rem;
+}
+legend{
+    background-color: darkslategrey;
+    border:1px solid black;
+    border-radius: .25rem;
+    color:whitesmoke;
+    padding:.25rem;
+}
+
+button{
+    background-color:darkslategrey;
+    border-radius: .25rem;
+    color:white;
+    padding:.25rem;
+}
