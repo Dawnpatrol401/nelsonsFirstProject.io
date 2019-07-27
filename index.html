@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="gridLayout.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+        <h1>Title</h1>
+    </header>
+
+    <div>
+        <form>
+            <h2>Form Title</h2>
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                    <p id="firstNameLabel" class="input_label">First Name:</p> 
+                    <input id="firstName" type="text" placeholder="fake name">
+                
+                    <p class="input_label">Gender:</p> 
+                    <input list="sex" name="sex" placeholder="Pick One">
+                        <datalist id="sex">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </datalist>
+
+                    <p class="input_label">Birth date</p> 
+                    <input type="date" name="dob">
+                                               
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Favorites</legend>
+                <p class="input_label">Favorite Food</p>
+                <input list="fav-food" name="fav-food" placeholder="Pick One" autocomplete="on">
+                    <datalist id="fav_food">
+                        <option value="pizza">Pizza</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="steak">Steak</option>
+                        <option value="cheeseburgers">Cheeseburgers</option>
+                        <option value="kale">Kale</option>
+                        <option value="Sushi">Sushi</option>
+                    </datalist>
+
+                <p class="input_label">Favorite Desert</p>
+                <input list="fav-desert" name="fav-desert" placeholder="Pick One" autocomplete="on">
+                    <datalist id="fav-desert">
+                        <option value="ice-cream">Ice Cream</option>
+                        <option value="froyo">Froyo</option>
+                        <option value="cheesecake">Cheesecake</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="cake">Cake</option>
+                        <option value="pie">Pie</option>
+                    </datalist>
+
+                <p class="input_label">Favorite Color</p>
+                <input list="fav-color" name="fav-color" placeholder="Pick One" autocomplete="on">
+                    <datalist id="fav_color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        <option value="black">Black</option>
+                        <option value="orange">Orange</option>
+                    </datalist>
+            </fieldset>
+        </form>
+    </div>
+
+    <button type="button"><!-- Button content created with javascript --></button>
+
+    <div id="fake-console">
+        <ul>
+            <!-- The list items will populate with javaScript. -->
+            <!-- Hopefully they will be the console events -->
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
