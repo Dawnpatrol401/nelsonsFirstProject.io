@@ -50,8 +50,3 @@ button{
     width: 90%;
     margin:0 5% 0 5%;
 }
-#fake-console{
-    background-color: black;
-    border: 1px solid black;
-    color:limegreen;
-}

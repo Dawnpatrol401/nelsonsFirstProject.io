@@ -23,3 +23,12 @@ button{
     color:white;
     padding:.25rem;
 }
+#fake-console{
+    background-color: black;
+    border: 1px solid grey;
+    color:limegreen;
+    overflow: scroll;
+}
+ul{
+    list-style-type: none;
+}
