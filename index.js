@@ -12,7 +12,12 @@ const ul = document.querySelector('ul');
 const pageTitle = document.querySelector('h1');
 const formTitle = document.querySelector('h2');
 const input_label = document.getElementsByClassName('input_label');
-
+const submitButton = document.getElementById('submitFormButton');
+const nameInput = document.getElementById('firstName');
+const maleOrFemale = document.getElementById('sex');
+const dob = document.getElementById('dob');
+const favFood = document.getElementById('fav-food');
+const favDesert = document.getElementById('fav-desert');
 
 
 // ==== ADD FUNCTIONALITY ====
@@ -28,6 +33,7 @@ toggleSwitch.addEventListener('click', ()=>{
 });
 
 //Log events to fake console
+// MOUSE OVERS
 pageTitle.addEventListener('mouseover',()=>{
     const li = document.createElement('li');
     var today = new Date();
@@ -46,12 +52,42 @@ input_label[i].addEventListener('mouseover',()=>{
     const li = document.createElement('li');
     var today = new Date();
     li.textContent="The user moused over the input label " + today.getUTCFullYear()+ '-' + today.getMonth() + '-' + today.getUTCDate() + ' ' + today.getTime();
-    li.style.color='red';
     ul.appendChild(li);
 })
 }
 
+// BUTTON CLICKS
+submitButton.addEventListener('click',()=>{
+    const li = document.createElement('li');
+    var today = new Date();
+    li.textContent="The user submitted the form " + today.getUTCFullYear()+ '-' + today.getMonth() + '-' + today.getUTCDate() + ' ' + today.getTime();
+    li.style.color = "pink";
+    ul.appendChild(li);
+});
 
+toggleSwitch.addEventListener('click',()=>{
+    const li = document.createElement('li');
+    var today = new Date();
+    li.textContent="User Clicked Toggle Switch " + today.getUTCFullYear()+ '-' + today.getMonth() + '-' + today.getUTCDate() + ' ' + today.getTime();
+    li.style.color = "red";
+    ul.appendChild(li);
+});
+
+nameInput.addEventListener('click',()=>{
+    const li = document.createElement('li');
+    var today = new Date();
+    li.textContent="The user clicked on the name input box " + today.getUTCFullYear()+ '-' + today.getMonth() + '-' + today.getUTCDate() + ' ' + today.getTime();
+    li.style.color = "red";
+    ul.appendChild(li);
+});
+
+maleOrFemale.addEventListener('click',()=>{
+    const li = document.createElement('li');
+    var today = new Date();
+    li.textContent="The user clicked on the sex input box " + today.getUTCFullYear()+ '-' + today.getMonth() + '-' + today.getUTCDate() + ' ' + today.getTime();
+    li.style.color = "red";
+    ul.appendChild(li);
+});
 
 
 

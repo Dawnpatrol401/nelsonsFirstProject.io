@@ -45,6 +45,11 @@ button{
     display: block;
     margin:1.5rem auto 1rem auto;
 }
+#submitFormButton{
+    margin: 0;
+    width: 7rem;
+    overflow: auto;
+}
 #fake-console{
     height:25rem;
     width: 90%;
