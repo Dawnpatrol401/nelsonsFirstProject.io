@@ -1,15 +1,19 @@
-const ul = document.getElementsByTagName('ul')[0];
-const firstNameLabel = document.getElementById('firstNameLabel');
+const toggleSwitch = document.getElementById('toggleSwitch');
+const fakeConsole = document.getElementById('fake-console');
 
-firstNameLabel.addEventListener('mouseover',()=>{
-    var p = document.querySelector('p');
-    p.innerText = "I changed it";
-    console.log('moused over it');
+
+//MAKE BUTTON HIDE AND SHOW THE CONSOLE
+toggleSwitch.addEventListener('click', ()=>{
+    if(fakeConsole.style.display=='block'){
+        fakeConsole.style.display ='none';
+        toggleSwitch.textContent="Show Console";
+    }else{
+        fakeConsole.style.display='block';
+        toggleSwitch.textContent='Hide Console';
+    }
 });
-firstNameLabel.addEventListener('mouseout',()=>{
-    var p = document.querySelector('p');
-    p.innerText = "First Name";
-    console.log('moused over it');
-});
+
+
+
 
 
