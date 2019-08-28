@@ -1,8 +1,13 @@
-# tts_weekOne_weekend
-This is my first project.
+# Hideable Console on Page
+Contributor: [Christopher Nelson](https://www.linkedin.com/in/chrisnelson222)
 
-My goal with this was to create a fake console on the page that you could show or hide and that is scrollable.  I wanted to have events get logged into the console.  I started with a couple of mouse over events.
+I am learning how to manipulate the DOM with javascript.  My goal for this project was to do the following:
+* Create a form on the page that will create events.
+* Create a simulated console at the bottom of the page that can be hidden.
+* Use that console to show events taking place, similar to if I was to do a console log.
+* I used an unordered list to create the events.
 
-In the future I want to add some more events. 
-Have the events logged into the top of the list rather than the bottom.
-Make the code way more DRY
+In the future I would like to:
+* Add some more events. 
+* Have the events logged into the top of the list rather than the bottom.
+* Make the code more DRY
